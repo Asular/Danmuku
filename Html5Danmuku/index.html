@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>弹幕视频</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/danmuku.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="EaselJS/js/easeljs-0.8.1.min.js"></script>
+    <script type="text/javascript" src="js/danmuku.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+</head>
+<body>
+     <div id="videoContainer"  class="videoContainer">
+         <video id="video" controls="controls" >
+             <source src="video/kyoani.mp4" type="video/mp4">
+             <p>你的浏览器不支持Html5视频</p>
+             <p>Your browser doesn't support Html5 video</p>
+         </video>
+         <canvas id="danmukuCanvas" width="640" height="360"></canvas>
+     </div>
+     <div class="input-group danmukuSend">
+         <input type="text" class="form-control " id="inputDanmuku" placeholder="请在这里输入您的弹幕">
+         <span class="input-group-btn">
+             <button class="btn btn-primary " id="sendBt" type="button">
+                 发送弹幕
+             </button>
+         </span>
+     </div>
+</body>
+</html>
